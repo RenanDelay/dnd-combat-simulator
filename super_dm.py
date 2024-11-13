@@ -5,7 +5,7 @@ from combat_encounter_dm import CombatEncounterDM
 class SuperDM:
     def __init__(self):
         self.characters = self.load_characters()
-        self.combat_encounter = CombatEncounterDM(self.characters, self.environment)
+        self.combat_encounter = CombatEncounterDM(self.characters)
 
     def load_characters(self):
         character_objects = []
